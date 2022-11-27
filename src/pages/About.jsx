@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import OurStory from '../components/OurStory';
 
 function About() {
   return (
@@ -9,6 +10,7 @@ function About() {
         title="About"
         button="hide"
       />
+      <OurStory />
     </>
   );
 }

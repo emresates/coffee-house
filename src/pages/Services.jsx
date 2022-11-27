@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import Qualifications from '../components/Qualifications';
 
 function Services() {
   return (
@@ -9,6 +10,7 @@ function Services() {
         title="Services"
         button="hide"
       />
+      <Qualifications />
     </>
   );
 }

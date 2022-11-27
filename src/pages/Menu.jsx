@@ -1,4 +1,5 @@
 import React from 'react';
+import BookaTable from '../components/BookaTable';
 import Hero from '../components/Hero';
 
 function Menu() {
@@ -9,6 +10,7 @@ function Menu() {
         title="Menu"
         button="hide"
       />
+      <BookaTable />
     </>
   );
 }

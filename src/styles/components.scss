@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap');
 
 $font1: 'Love Light';
-$font2: 'Lora';
+$font2: 'Josefin Slab';
 $font3: 'Great Vibes';
 
-$yellow: #d68000;
+$yellow: #d2a767;
 $white: #f2f2f2;
 $black: #0d0b0b;
+$dark: #000000;
+$gray: #6d6d6d;
 
 * {
   margin: 0;
@@ -18,8 +21,15 @@ $black: #0d0b0b;
   text-decoration: none;
   font-family: $font2;
   font-size: 100%;
+  outline: none;
+  border: none;
+  resize: none;
 }
 
 body {
-  background-color: $black;
+  background-image: url('https://images.unsplash.com/photo-1547499417-61a435d27cb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: saturation;
 }
