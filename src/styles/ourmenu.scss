@@ -1,0 +1,66 @@
+.our-menu {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  padding: 2rem;
+
+  img {
+    width: 300px;
+    margin: 10px 0;
+  }
+
+  &-left {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 5rem 5rem 20rem;
+    color: wheat;
+
+    h1 {
+      font-family: $font1;
+      color: $yellow;
+      font-size: 5rem;
+      font-weight: 300;
+    }
+    h2 {
+      font-size: 4rem;
+      margin-top: -2rem;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      font-weight: 900;
+      margin-top: 1rem;
+      color: $gray;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: transparent;
+      border: 1px solid $yellow;
+      color: $yellow;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: $yellow;
+        color: $white;
+      }
+    }
+  }
+
+  &-right {
+    width: 50%;
+    padding: 2rem 5rem;
+    display: flex;
+    &-first2 {
+      width: 50%;
+    }
+    &-last2 {
+      width: 50%;
+      padding-top: 2rem;
+    }
+  }
+}

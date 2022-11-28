@@ -1,6 +1,7 @@
 import React from 'react';
 import BookaTable from '../components/BookaTable';
 import Hero from '../components/Hero';
+import OurMenu from '../components/OurMenu';
 import OurStory from '../components/OurStory';
 import Qualifications from '../components/Qualifications';
 
@@ -16,6 +17,7 @@ function Home() {
       <BookaTable />
       <OurStory />
       <Qualifications />
+      <OurMenu />
     </>
   );
 }
