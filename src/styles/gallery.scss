@@ -1,0 +1,51 @@
+.gallery {
+  width: 100%;
+  display: flex;
+  height: 40vh;
+  .image {
+    width: 25%;
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .yellow {
+      position: absolute;
+      opacity: 0;
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%, 50%);
+      width: 70px;
+      height: 70px;
+      background-color: $yellow;
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+
+    i {
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%, 50%);
+      color: $white;
+      font-size: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    &:hover {
+      .yellow {
+        opacity: 1;
+        transform: rotate(135deg) translate(70%, 0%);
+      }
+
+      i {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
+import ScrollToTop from '../components/ScrollToTop';
 
 function Shop() {
   return (
@@ -9,6 +11,10 @@ function Shop() {
         title="Shop"
         button="hide"
       />
+
+
+      <Footer />
+      <ScrollToTop />
     </>
   );
 }

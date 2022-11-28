@@ -1,6 +1,8 @@
 import React from 'react';
 import BookaTable from '../components/BookaTable';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
+import ScrollToTop from '../components/ScrollToTop';
 
 function Menu() {
   return (
@@ -11,6 +13,9 @@ function Menu() {
         button="hide"
       />
       <BookaTable />
+
+      <Footer />
+      <ScrollToTop />
     </>
   );
 }

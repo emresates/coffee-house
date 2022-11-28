@@ -1,10 +1,17 @@
 import React from 'react';
 import BookaTable from '../components/BookaTable';
+import CoffeeSellers from '../components/CoffeeSellers';
+import Count from '../components/Count';
+import CustomerSays from '../components/CustomerSays';
+import Gallery from '../components/Gallery';
 import Hero from '../components/Hero';
 import OurMenu from '../components/OurMenu';
+import FavoriteProducts from '../components/FavoriteProducts';
 import OurStory from '../components/OurStory';
 import Qualifications from '../components/Qualifications';
-
+import ScrollToTop from '../components/ScrollToTop';
+import RecentFromBlog from '../components/RecentFromBlog';
+import Footer from '../components/Footer';
 function Home() {
   return (
     <>
@@ -18,6 +25,15 @@ function Home() {
       <OurStory />
       <Qualifications />
       <OurMenu />
+      <Count />
+      <CoffeeSellers />
+      <Gallery />
+      <FavoriteProducts />
+      <CustomerSays />
+      <RecentFromBlog />
+      <Footer />
+
+      <ScrollToTop />
     </>
   );
 }

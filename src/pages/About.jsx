@@ -1,7 +1,11 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import OurStory from '../components/OurStory';
-
+import OurMenu from '../components/OurMenu';
+import CustomerSays from '../components/CustomerSays';
+import ScrollToTop from '../components/ScrollToTop';
+import Count from '../components/Count';
+import Footer from '../components/Footer';
 function About() {
   return (
     <>
@@ -11,6 +15,12 @@ function About() {
         button="hide"
       />
       <OurStory />
+      <CustomerSays />
+      <OurMenu />
+      <Count />
+      <Footer />
+
+      <ScrollToTop />
     </>
   );
 }

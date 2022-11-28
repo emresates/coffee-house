@@ -1,7 +1,8 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Qualifications from '../components/Qualifications';
-
+import ScrollToTop from '../components/ScrollToTop';
 function Services() {
   return (
     <>
@@ -11,6 +12,9 @@ function Services() {
         button="hide"
       />
       <Qualifications />
+
+      <Footer />
+      <ScrollToTop />
     </>
   );
 }

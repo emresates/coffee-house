@@ -1,17 +1,18 @@
 import React from 'react';
+import HeaderTitle from './subcomponents/HeaderTitle';
 
 function OurMenu() {
   return (
     <div className="our-menu">
       <div className="our-menu-left">
-        <h1>Discorver</h1>
-        <h2>Our Menu</h2>
-        <p>
-          Far far away, behind the word mountains, far from the countries
+        <HeaderTitle
+          header="Discover"
+          title="Our Menu"
+          p="Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts. Separated they
           live in Bookmarksgrove right at the coast of the Semantics, a large
-          language ocean.
-        </p>
+          language ocean."
+        />
         <button>View Full Menu</button>
       </div>
       <div className="our-menu-right">
