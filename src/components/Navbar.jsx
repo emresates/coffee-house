@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <div className={scrollPosition > 100 ? 'navbar active' : 'navbar'}>
-      <h1>Coffeverse</h1>
+      <h1>Coffeeverse</h1>
       <ul>
         {NavbarItems.map((item, index) => {
           return (

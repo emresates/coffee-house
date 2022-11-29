@@ -1,7 +1,10 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import BookaTable from '../components/BookaTable';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
+import MenuItems from '../components/MenuItems';
+import OurProducts from '../components/OurProducts';
 import ScrollToTop from '../components/ScrollToTop';
 
 function Menu() {
@@ -13,7 +16,10 @@ function Menu() {
         button="hide"
       />
       <BookaTable />
+      <MenuItems />
+      <OurProducts />
 
+      <Outlet />
       <Footer />
       <ScrollToTop />
     </>

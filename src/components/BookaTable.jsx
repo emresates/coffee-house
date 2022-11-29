@@ -30,7 +30,7 @@ function BookaTable() {
             </div>
           </div>
         </div>
-        <form>
+        <form onSubmit={null}>
           <h1>Book a Table</h1>
           <div className="input1">
             <input type="text" placeholder="First Name" />
@@ -43,7 +43,7 @@ function BookaTable() {
           </div>
           <div className="input3">
             <textarea placeholder="Message"></textarea>
-            <input type="submit" />
+            <button>Book a Table</button>
           </div>
         </form>
       </div>

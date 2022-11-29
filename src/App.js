@@ -5,9 +5,11 @@ import Menu from './pages/Menu';
 import Services from './pages/Services';
 import Blog from './pages/Blog';
 import About from './pages/About';
-import Shop from './pages/Shop';
 import Contact from './pages/Contact';
 import './styles/main.scss';
+import MainDish from './components/subpages/MainDish';
+import Drinks from './components/subpages/Drinks';
+import Desserts from './components/subpages/Desserts';
 
 function App() {
   return (
@@ -15,11 +17,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="menu" element={<Menu />} />
+        <Route path="menu" element={<Menu />}>
+          <Route index element={<MainDish />} />
+          <Route path="drinks" element={<Drinks />} />
+          <Route path="desserts" element={<Desserts />} />
+        </Route>
         <Route path="services" element={<Services />} />
         <Route path="blog" element={<Blog />} />
         <Route path="about" element={<About />} />
-        <Route path="shop" element={<Shop />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
     </>

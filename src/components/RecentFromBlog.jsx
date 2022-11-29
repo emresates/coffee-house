@@ -12,8 +12,9 @@ function RecentFromBlog() {
         p="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
       />
       <div className="recentblog-gallery">
-        {BlogItems.slice(0, 3).map((item) => (
+        {BlogItems.slice(0, 3).map((item, index) => (
           <BlogCard
+            key={index}
             image={item.foodImg}
             date={item.date}
             author={item.author}

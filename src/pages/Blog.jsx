@@ -1,4 +1,5 @@
 import React from 'react';
+import BlogItemsContainer from '../components/BlogItemsContainer';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import ScrollToTop from '../components/ScrollToTop';
@@ -11,6 +12,7 @@ function Blog() {
         title="Blog"
       />
 
+      <BlogItemsContainer />
       <Footer />
       <ScrollToTop />
     </>

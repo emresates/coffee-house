@@ -26,6 +26,11 @@
         i {
           font-size: 2rem;
           margin-right: 1rem;
+          cursor: pointer;
+          transition: color 0.3s;
+          &:hover {
+            color: $yellow;
+          }
         }
       }
 
@@ -35,6 +40,11 @@
         display: flex;
         justify-content: space-between;
         text-align: right;
+        cursor: pointer;
+        transition: color 0.3s;
+        &:hover {
+          color: $yellow;
+        }
       }
     }
   }

@@ -1,5 +1,7 @@
 import React from 'react';
+import ContactItems from '../components/ContactItems';
 import Footer from '../components/Footer';
+import GoogleMaps from '../components/GoogleMap';
 import Hero from '../components/Hero';
 import ScrollToTop from '../components/ScrollToTop';
 function Contact() {
@@ -10,7 +12,8 @@ function Contact() {
         title="Contact"
         button="hide"
       />
-
+      <ContactItems />
+      <GoogleMaps />
       <Footer />
       <ScrollToTop />
     </>
