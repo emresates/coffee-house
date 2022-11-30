@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import HeaderTitle from './subcomponents/HeaderTitle';
 
@@ -5,7 +6,10 @@ function OurStory() {
   return (
     <>
       <div className="ourstory">
-        <img
+        <motion.img
+          initial={{ x: -100 }}
+          whileInView={{ x: 0 }}
+          transition={{ type: 'linear', duration: 1 }}
           src="https://images.unsplash.com/photo-1505275350441-83dcda8eeef5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
           alt=""
         />

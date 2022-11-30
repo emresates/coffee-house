@@ -9,13 +9,11 @@
     padding: 2rem 1rem 2rem 12rem;
     background-color: $dark;
     color: $white;
-    display: flex;
-    justify-content: space-around;
+    @include flex(space-around);
 
     &-item {
       width: 25%;
-      display: flex;
-      justify-content: space-evenly;
+      @include flex(space-evenly);
       padding: 1rem;
       i {
         margin-right: 1rem;
@@ -39,9 +37,7 @@
   form {
     width: 35%;
     height: 30vh;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    @include absolute('', 0, 0);
     padding: 1.5rem;
     background-color: $yellow;
     h1 {
@@ -58,8 +54,7 @@
 
     div {
       margin: 1rem 0;
-      display: flex;
-      justify-content: space-between;
+      @include flex(space-between);
     }
 
     .input1 {

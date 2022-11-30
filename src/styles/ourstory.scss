@@ -9,9 +9,7 @@
   }
 
   &-info {
-    position: absolute;
-    left: 45%;
-    top: 20%;
+    @include absolute(20%,15%);
     width: 40%;
     background-color: rgba(0, 0, 0, 0.571);
     padding: 3rem;

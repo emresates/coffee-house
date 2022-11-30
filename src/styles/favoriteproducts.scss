@@ -5,9 +5,7 @@
     text-align: center;
 
     &-gallery {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center);
         margin-top: 1rem;
     }
 }

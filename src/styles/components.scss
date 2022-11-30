@@ -35,3 +35,18 @@ body {
   background-size: cover;
   background-blend-mode: saturation;
 }
+
+@mixin flex($content, $items: none, $text: none) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  text-align: $text;
+}
+
+@mixin absolute($top:none,$right:none,$bottom:none,$left:none){
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

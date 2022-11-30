@@ -1,24 +1,21 @@
 .blogcard {
+  @include flex(center, none, left);
   margin: 0 2rem;
   width: 400px;
   height: 600px;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  text-align: left;
   color: $white;
 
   img {
     width: 100%;
     height: 400px;
-}
+  }
 
   .details {
     width: 100%;
     margin: 1rem 0;
     font-size: 1.4rem;
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between);
     color: $gray;
 
     .comment {

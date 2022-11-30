@@ -1,8 +1,13 @@
+import { motion } from 'framer-motion';
 import React from 'react';
-
 function BlogCard(props) {
   return (
-    <div className="blogcard">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ type: 'linear', duration: 1 }}
+      className="blogcard"
+    >
       <img src={props.image} alt={props.title} />
       <div className="details">
         <h3 className="date">{props.date}</h3>
@@ -14,7 +19,7 @@ function BlogCard(props) {
       </div>
       <h2>{props.title}</h2>
       <p>{props.text}</p>
-    </div>
+    </motion.div>
   );
 }
 

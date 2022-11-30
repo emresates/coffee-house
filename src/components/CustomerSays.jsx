@@ -1,7 +1,7 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { CustomerItems } from '../data/CustomerData';
 import HeaderTitle from './subcomponents/HeaderTitle';
-
 function CustomerSays() {
   return (
     <div className="customersays">
@@ -9,7 +9,13 @@ function CustomerSays() {
 
       <div className="testimonies">
         {CustomerItems.map((item, index) => (
-          <div className="testimony" key={index}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: 'ease', duration: 1 }}
+            className="testimony"
+            key={index}
+          >
             <p>{item.text}</p>
             <div className="person">
               <img src={item.personImg} alt="" />
@@ -18,7 +24,7 @@ function CustomerSays() {
                 <h2>{item.personJob}</h2>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

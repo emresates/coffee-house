@@ -1,6 +1,6 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import HeaderTitle from './subcomponents/HeaderTitle';
-
 function OurMenu() {
   return (
     <div className="our-menu">
@@ -16,7 +16,12 @@ function OurMenu() {
         <button>View Full Menu</button>
       </div>
       <div className="our-menu-right">
-        <div className="our-menu-right-first2">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: 'linear', duration: 1 }}
+          className="our-menu-right-first2"
+        >
           <img
             src="https://images.unsplash.com/photo-1502471602546-17554aac1160?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
             alt=""
@@ -25,8 +30,13 @@ function OurMenu() {
             src="https://images.unsplash.com/photo-1565065963005-92ba391a8ebc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
             alt=""
           />
-        </div>
-        <div className="our-menu-right-last2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: 'linear', duration: 1 }}
+          className="our-menu-right-last2"
+        >
           <img
             src="https://images.unsplash.com/photo-1587080413959-06b859fb107d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1792&q=80"
             alt=""
@@ -35,7 +45,7 @@ function OurMenu() {
             src="https://images.unsplash.com/photo-1608634070674-2db08b533d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
             alt=""
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

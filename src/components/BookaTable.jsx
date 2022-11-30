@@ -1,9 +1,15 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 function BookaTable() {
   return (
     <>
-      <div className="table">
+      <motion.div
+        initial={{ opacity: 0, y:100 }}
+        whileInView={{ opacity: 1 , y: 0}}
+        transition={{ type: 'linear', duration: 1 }}
+        className="table"
+      >
         <div className="information">
           <div className="information-item">
             <i className="fa-solid fa-mobile-screen"></i>
@@ -46,7 +52,7 @@ function BookaTable() {
             <button>Book a Table</button>
           </div>
         </form>
-      </div>
+      </motion.div>
     </>
   );
 }

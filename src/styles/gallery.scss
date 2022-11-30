@@ -13,10 +13,8 @@
     }
 
     .yellow {
-      position: absolute;
+      @include absolute("","",50%,50%);
       opacity: 0;
-      left: 50%;
-      bottom: 50%;
       transform: translate(-50%, 50%);
       width: 70px;
       height: 70px;
@@ -26,9 +24,7 @@
     }
 
     i {
-      position: absolute;
-      left: 50%;
-      bottom: 50%;
+      @include absolute("","",50%,50%);
       transform: translate(-50%, 50%);
       color: $white;
       font-size: 1.5rem;

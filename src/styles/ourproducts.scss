@@ -24,9 +24,8 @@
   &-items {
     margin: auto;
     width: 80%;
-    display: flex;
+    @include flex("", flex-start);
     flex-wrap: wrap;
     padding: 3rem;
-    align-items: flex-start;
   }
 }

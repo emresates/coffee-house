@@ -7,7 +7,7 @@ function Hero(props) {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ type: 'linear', duration: 0.5 }}
+        transition={{ type: 'linear', duration: 1 }}
         className="hero"
       >
         <img src={props.image} alt="" />

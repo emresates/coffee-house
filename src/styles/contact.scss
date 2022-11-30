@@ -1,8 +1,7 @@
 .contact-items {
   width: 100%;
   padding: 8rem 10rem;
-  display: flex;
-  justify-content: space-between;
+  @include flex(space-between);
   color: $white;
   &-left {
     width: 30%;
@@ -36,8 +35,7 @@
     }
     .input1 {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
+      @include flex(space-between);
     }
 
     textarea {

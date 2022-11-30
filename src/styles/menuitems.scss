@@ -4,8 +4,7 @@
   text-align: center;
   .food {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    @include flex(center);
     flex-wrap: wrap;
 
     &-item {
