@@ -3,10 +3,10 @@
   height: 50vh;
   background-color: $yellow;
   display: flex;
-  padding: 2rem 20rem;
+  padding: $r-20 20rem;
 
   &-item {
-    padding: 2rem;
+    padding: $r-20;
     @include flex(center, center, center);
     flex-direction: column;
     .svg {
@@ -21,13 +21,13 @@
     }
 
     h1 {
-      margin-top: 2rem;
-      font-size: 2rem;
+      margin-top: $r-20;
+      font-size: $r-20;
       font-weight: 500;
     }
     p {
-      margin-top: 2rem;
-      font-size: 1.2rem;
+      margin-top: $r-20;
+      font-size: $r-2;
     }
   }
 }

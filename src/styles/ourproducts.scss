@@ -3,12 +3,12 @@
   width: 100%;
 
   .link-container {
-    margin-top: 3rem;
+    margin-top: $r-30;
     .link {
-      padding: 1rem;
+      padding: $r-1;
       color: $yellow;
-      margin: 1rem;
-      font-size: 2.4rem;
+      margin: $r-1;
+      font-size: $r-24;
       font-weight: 700;
       border-bottom: 2px solid $yellow;
       transition: 0.3s;
@@ -26,6 +26,6 @@
     width: 80%;
     @include flex("", flex-start);
     flex-wrap: wrap;
-    padding: 3rem;
+    padding: $r-30;
   }
 }

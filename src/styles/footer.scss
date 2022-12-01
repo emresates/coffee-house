@@ -11,20 +11,20 @@
 
     .footer-item {
       width: 25%;
-      padding: 0 2rem;
+      padding: 0 $r-20;
       h1 {
-        font-size: 2rem;
-        margin: 2rem 0;
+        font-size: $r-20;
+        margin: $r-20 0;
       }
       p {
         line-height: 1.2;
-        font-size: 1.2rem;
+        font-size: $r-2;
       }
       .icons {
-        margin-top: 2rem;
+        margin-top: $r-20;
         i {
-          font-size: 2rem;
-          margin-right: 1rem;
+          font-size: $r-20;
+          margin-right: $r-1;
           cursor: pointer;
           transition: color 0.3s;
           &:hover {
@@ -34,8 +34,8 @@
       }
 
       li {
-        margin-bottom: 1.5rem;
-        font-size: 1.2rem;
+        margin-bottom: $r-6;
+        font-size: $r-2;
         @include flex(space-between, "",right);
         cursor: pointer;
         transition: color 0.3s;
@@ -48,7 +48,7 @@
   .copyright {
     width: 100%;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: $r-4;
     color: $gray;
   }
 }

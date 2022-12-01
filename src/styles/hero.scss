@@ -19,7 +19,7 @@
     text-align: center;
 
     .welcome {
-      font-size: 4rem;
+      font-size: $r-40;
       color: $yellow;
       font-family: $font3;
       font-weight: 300;
@@ -29,18 +29,18 @@
     }
 
     .title {
-      font-size: 3rem;
+      font-size: $r-30;
       font-weight: 400;
       text-transform: uppercase;
-      margin: 1rem 0;
+      margin: $r-1 0;
       &.hide {
         display: none;
       }
     }
 
     .text {
-      font-size: 1.4rem;
-      margin: 1rem 0;
+      font-size: $r-4;
+      margin: $r-1 0;
       &.hide {
         display: none;
       }
@@ -48,8 +48,8 @@
 
     .buttons {
       button {
-        margin: 0.3rem;
-        padding: 1rem 0.5rem;
+        margin: $r-05;
+        padding: $r-1 $r-05;
         border: none;
         cursor: pointer;
         transition: all 0.3s;

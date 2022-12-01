@@ -2,7 +2,7 @@
   width: 100%;
   height: 80vh;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: $r-20;
   background-image: url('https://images.unsplash.com/photo-1612346903007-b5ac8bb135bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
   background-position: center;
   background-size: cover;
@@ -24,12 +24,12 @@
       padding: 2rem 4rem;
 
       p {
-        font-size: 1.3rem;
+        font-size: $r-4;
       }
 
       .person {
         width: 100%;
-        margin-top: 2rem;
+        margin-top: $r-20;
         @include flex(center, center, left);
 
         img {
@@ -40,7 +40,7 @@
 
         &-info {
           text-align: left;
-          margin: 0 1rem;
+          margin: 0 $r-1;
         }
       }
       &:nth-child(even) {

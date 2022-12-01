@@ -2,7 +2,7 @@
   width: 100%;
   height: 80vh;
   display: flex;
-  padding: 2rem;
+  padding: $r-20;
 
   img {
     width: 300px;
@@ -13,12 +13,12 @@
     width: 50%;
     @include flex(center, flex-end,right);
     flex-direction: column;
-    padding: 5rem 5rem 5rem 20rem;
+    padding: $r-50 $r-50 $r-50 20rem;
     color: wheat;
 
     button {
-      margin-top: 1rem;
-      padding: 1rem;
+      margin-top: $r-1;
+      padding: $r-1;
       background-color: transparent;
       border: 1px solid $yellow;
       color: $yellow;
@@ -33,14 +33,14 @@
 
   &-right {
     width: 50%;
-    padding: 2rem 5rem;
+    padding: $r-20 $r-50;
     display: flex;
     &-first2 {
       width: 50%;
     }
     &-last2 {
       width: 50%;
-      padding-top: 2rem;
+      padding-top: $r-20;
     }
   }
 }

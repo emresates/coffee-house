@@ -1,6 +1,6 @@
 .menu-items {
   width: 100%;
-  padding: 2rem;
+  padding: $r-20;
   text-align: center;
   .food {
     width: 100%;
@@ -8,10 +8,10 @@
     flex-wrap: wrap;
 
     &-item {
-      padding: 2rem;
+      padding: $r-20;
       h1 {
         color: $white;
-        font-size: 3rem;
+        font-size: $r-30;
         text-align: left;
       }
     }

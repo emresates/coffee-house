@@ -7,7 +7,7 @@ function Gallery() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ type: 'linear', duration: 1, delay: 0.2 }}
+        transition={{ type: 'linear', duration: 1 }}
         className="image"
       >
         <img
@@ -20,7 +20,7 @@ function Gallery() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ type: 'linear', duration: 1, delay: 0.4 }}
+        transition={{ type: 'linear', duration: 1 }}
         className="image"
       >
         <img
@@ -33,7 +33,7 @@ function Gallery() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ type: 'linear', duration: 1, delay: 0.6 }}
+        transition={{ type: 'linear', duration: 1 }}
         className="image"
       >
         <img
@@ -46,7 +46,7 @@ function Gallery() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ type: 'linear', duration: 1, delay: 0.8 }}
+        transition={{ type: 'linear', duration: 1 }}
         className="image"
       >
         <img

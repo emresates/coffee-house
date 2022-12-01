@@ -14,19 +14,19 @@
     &-item {
       width: 25%;
       @include flex(space-evenly);
-      padding: 1rem;
+      padding: $r-1;
       i {
-        margin-right: 1rem;
+        margin-right: $r-1;
         color: $yellow;
-        font-size: 1.5rem;
+        font-size: $r-6;
       }
 
       h2 {
-        font-size: 1.3rem;
+        font-size: $r-2;
       }
 
       p {
-        margin-top: 1rem;
+        margin-top: $r-1;
         color: $gray;
         line-height: 1.5;
         font-weight: 500;
@@ -38,22 +38,22 @@
     width: 35%;
     height: 30vh;
     @include absolute('', 0, 0);
-    padding: 1.5rem;
+    padding: $r-4;
     background-color: $yellow;
     h1 {
       color: $white;
-      font-size: 1.2rem;
+      font-size: $r-2;
       text-transform: uppercase;
     }
     input {
       background-color: transparent;
       border-bottom: 1px solid $gray;
-      padding: 1rem 0;
+      padding: $r-1 0;
       color: $white;
     }
 
     div {
-      margin: 1rem 0;
+      margin: $r-1 0;
       @include flex(space-between);
     }
 
@@ -73,7 +73,7 @@
       textarea {
         width: 48%;
         background-color: transparent;
-        padding: 0.5rem;
+        padding: $r-05;
         color: $white;
         border-bottom: 1px solid $gray;
       }

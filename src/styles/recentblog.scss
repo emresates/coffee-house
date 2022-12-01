@@ -2,11 +2,11 @@
   width: 100%;
   height: 90vh;
   text-align: center;
-  padding: 2rem;
+  padding: $r-20;
 
   &-gallery {
     width: 100%;
-    margin-top: 2rem;
-    @include flex(center, "",left);
+    margin-top: $r-20;
+    @include flex(center, '', left);
   }
 }
